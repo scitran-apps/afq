@@ -1,0 +1,47 @@
+{
+    "input_dir": "/Users/lmperry/Code/git/vistalab/nims_modules/qmr/qmr-flywheel",
+    "metadata": {
+        "age": 0,
+        "age_comp": 0,
+        "bvalue": 1000,
+        "ndirs": 30,
+        "sex": "unknown"
+    },
+    "output_dir": "/Users/lmperry/Code/git/vistalab/nims_modules/qmr/qmr-flywheel",
+    "params": {
+        "cleanClippedFibers": 0,
+        "cleanFibers": 1,
+        "cleanIter": 5,
+        "clip2rois": 1,
+        "computeCSD": 0,
+        "computenorms": 1,
+        "cutoffLower": 10,
+        "cutoffUpper": 90,
+        "fiberWeighting": 1,
+        "imresample": 0,
+        "maxDist": 5,
+        "maxLen": 4,
+        "normalization": "spm",
+        "numberOfNodes": 100,
+        "runcontrolcomp": 1,
+        "savefigs": 0,
+        "track": {
+            "algorithm": "mrdiffusion",
+            "angleThresh": 30,
+            "faMaskThresh": 0.3,
+            "faThresh": 0.2,
+            "maxLengthThreshMm": 250,
+            "minLengthThreshMm": 50,
+            "nfibers": 500000,
+            "offsetJitter": 0,
+            "seedVoxelOffset": [
+                0.25,
+                0.75
+            ],
+            "stepSizeMm": 1,
+            "wPuncture": 0.2,
+            "whichAlgorithm": 1,
+            "whichInterp": 1
+        }
+    }
+}
