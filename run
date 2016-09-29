@@ -27,7 +27,7 @@ start_xvfb() {
 FLYWHEEL_BASE=/flywheel/v0
 OUTPUT_DIR=$FLYWHEEL_BASE/output
 INPUT_DIR=$FLYWHEEL_BASE/input
-ZIP_DIR=$INPUT_DIR/DTIINIT_OUTPUT # From the manifest
+ZIP_DIR=$INPUT_DIR/dtiInit_Archive # Must match input from the manifest
 WORK_DIR=$INPUT_DIR/work
 CONFIG_FILE=${FLYWHEEL_BASE}/config.json
 PARAMS_FILE=${WORK_DIR}/AFQ_params.json
