@@ -7,9 +7,9 @@
 	"source": "https://github.com/scitran-apps/afq",
 	"license": "GPL-2.0",
 	"flywheel": "0",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"inputs": {
-		"DTIINIT_OUTPUT": {
+		"DtiInit Output Archive": {
 			"base": "file",
 			"type": {
 				"enum": [

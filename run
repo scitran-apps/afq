@@ -82,7 +82,7 @@ else
 
   # Summary pdf
   convert "$FIGURES_DIR/*.{png}" $PDF_DIR/AFQ_Summary.pdf
-  convert "$FIGURES_DIR/*.{gif}" $PDF_DIR/AFQ_Brain_Renderings.pdf
+  convert "$FIGURES_DIR/*.{gif}" $PDF_DIR/AFQ_Fiber_Rendering.pdf
 
   # Pdf for each measure
   convert "$FIGURES_DIR/md/*.{png}" $PDF_DIR/AFQ_Figures_Mean_Diffusivity.pdf
@@ -90,10 +90,11 @@ else
   convert "$FIGURES_DIR/rd/*.{png}" $PDF_DIR/AFQ_Figures_Radial_Diffusivity.pdf
   convert "$FIGURES_DIR/fa/*.{png}" $PDF_DIR/AFQ_Figures_Fractional_Anisotropy.pdf
 
-  # Copy pdf, csv, mat, and json files to output
+  # Copy pdf, csv, mat, gif, and json files to output
   cp $PDF_DIR/*.pdf $OUTPUT_DIR
   cp $AFQ_DIR/csv_files/*.csv $OUTPUT_DIR
   cp $AFQ_DIR/*.mat $AFQ_DIR/*.json $OUTPUT_DIR
+  cp $FIGURES_DIR/000_RotatingFibers.gif $OUTPUT_DIR/AFQ_Fiber_Rendering.gif
 
   # Copy DTIINIT input/ouputs to AFQ
   cp -a $AFQ_INPUT_DIR $AFQ_DIR

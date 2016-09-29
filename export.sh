@@ -3,7 +3,7 @@
 # The container can be exported once it's started with
 org=scitran
 gear=afq
-version=0.0.0
+version=0.0.1
 
 outname=$gear-$version.tar
 container=$gear
